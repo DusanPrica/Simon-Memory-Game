@@ -122,6 +122,12 @@ function nextSequence() {
 function playSound(name) {
   var audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
+
+  if (name === "wrong") {
+    if (navigator.vibrate) {
+        navigator.vibrate(200);
+    }
+  }
 }
 
 function animatePress(currentColour) {

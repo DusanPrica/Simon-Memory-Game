@@ -33,6 +33,16 @@ body {
   border-radius: 20%;
 }
 
+@media (max-width: 600px) {
+  .btn {
+    width: 100px;
+    height: 100px;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+
 .game-over {
   background-color: red;
   opacity: 0.8;
