@@ -92,7 +92,7 @@ $(document).ready(function () {
     }
   });
 
-$(".btn").on("click touchstart", function () {
+$(".btn").on("click touchstart touchend", function () {
     var userChosenColour = $(this).attr("id");
     userClickedPattern.push(userChosenColour);
 
